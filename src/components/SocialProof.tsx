@@ -1,3 +1,4 @@
+
 export const SocialProof = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -21,8 +22,8 @@ export const SocialProof = () => {
           </div>
 
           <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-            <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl font-bold text-white">NBC</span>
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden border-2 border-gray-100">
+              <img src="/lovable-uploads/ffea873d-bb8b-4886-9099-836b29cb3d87.png" alt="Pathway Success Logo" className="w-16 h-16 object-contain" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Board Certification Path</h3>
             <p className="text-gray-600">Direct pathway to becoming a National Board Certified Health & Wellness Coach (NBC-HWC)</p>
