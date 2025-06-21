@@ -1,5 +1,5 @@
-
 import { TrendingUp, Users, DollarSign, Heart, Building, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const benefits = [
   {
@@ -77,6 +77,19 @@ export const BenefitsSection = () => {
               <p className="text-sm text-gray-600">As low as $250/month</p>
             </div>
           </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="border-2 border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+            asChild
+          >
+            <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
+              Schedule Free Call
+            </a>
+          </Button>
         </div>
       </div>
     </section>
