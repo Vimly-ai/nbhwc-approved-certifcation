@@ -77,9 +77,12 @@ export const FinalCTA = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                Secure Your Spot Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
+                  Secure Your Spot Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               
               <Button 
