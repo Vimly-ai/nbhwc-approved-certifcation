@@ -20,7 +20,7 @@ export const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Skip the "pop-up" certifications. Get nationally recognized, NBHWC-approved training that positions you for <strong>medical partnerships</strong> and a <strong>profitable coaching career</strong>.
+          Whether you've explored other certifications or are just starting out, IHIS offers the complete path to a reputable, profitable coaching career—fully approved by the NBHWC and recognized by medical professionals.
         </p>
 
         {/* VSL Video Placeholder */}
