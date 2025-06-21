@@ -1,10 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
+      
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -53,8 +53,11 @@ export const Hero = () => {
             variant="outline" 
             size="lg"
             className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+            asChild
           >
-            Schedule Free Call
+            <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
+              Schedule Free Call
+            </a>
           </Button>
         </div>
 
