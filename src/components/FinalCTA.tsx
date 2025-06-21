@@ -1,13 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, CheckCircle } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+      
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-900/20 via-transparent to-transparent"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto">
+        
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-300 px-4 py-2 rounded-full mb-6">
             <Clock className="h-5 w-5" />
@@ -23,6 +24,7 @@ export const FinalCTA = () => {
           </p>
         </div>
 
+        
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold mb-8">What You Get When You Enroll Today:</h3>
@@ -91,7 +93,6 @@ export const FinalCTA = () => {
 
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-400">
-                ✓ No risk - Full refund if not satisfied<br />
                 ✓ Payment plans available<br />
                 ✓ Early bird discount expires soon
               </p>
@@ -99,6 +100,7 @@ export const FinalCTA = () => {
           </div>
         </div>
 
+        
         <div className="text-center">
           <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-300 px-4 py-2 rounded-full mb-4">
             <Users className="h-5 w-5" />
