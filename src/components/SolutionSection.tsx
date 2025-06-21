@@ -1,5 +1,4 @@
 
-
 import { CheckCircle, Award, Users, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,6 +6,15 @@ export const SolutionSection = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-teal-50 to-emerald-50">
       <div className="max-w-6xl mx-auto">
+        {/* NBHWC Approved Image */}
+        <div className="text-center mb-12">
+          <img 
+            src="/lovable-uploads/dc1295a4-dcdb-477b-ae12-9a62b7388186.png" 
+            alt="NBHWC Approved Training Program" 
+            className="mx-auto h-32 md:h-40 w-auto"
+          />
+        </div>
+
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 px-4 py-2 rounded-full mb-6">
             <Award className="h-5 w-5" />
@@ -120,4 +128,3 @@ export const SolutionSection = () => {
     </section>
   );
 };
-
