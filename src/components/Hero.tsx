@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 
@@ -44,9 +45,12 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            asChild
           >
-            Secure Your Spot Now
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
+              Secure Your Spot Now
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
           
           <Button 
