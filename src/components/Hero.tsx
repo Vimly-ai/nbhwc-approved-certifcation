@@ -9,6 +9,15 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto text-center">
+        {/* Logo */}
+        <div className="mb-8">
+          <img 
+            src="/lovable-uploads/d2aaf6c5-b5e0-48af-8a64-b8f90e6b1bd6.png" 
+            alt="Institute of Holistic Integrative Studies Logo" 
+            className="mx-auto h-20 md:h-24 w-auto"
+          />
+        </div>
+
         <div className="mb-6">
           <span className="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold tracking-wide uppercase">
             August 2025 Cohort Now Open
