@@ -13,8 +13,8 @@ export const SocialProof = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-            <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
-              <img src="/new-logo.png" alt="NBHWC Logo" className="w-16 h-16 object-contain" />
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden border-2 border-gray-100">
+              <img src="/lovable-uploads/a50ffe48-d60a-4350-b55b-67f7d0097f90.png" alt="NBHWC Logo" className="w-16 h-16 object-contain" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Officially Approved</h3>
             <p className="text-gray-600">Approved Health and Wellness Coach Training & Education Program by the National Board for Health and Wellness Coaching</p>
