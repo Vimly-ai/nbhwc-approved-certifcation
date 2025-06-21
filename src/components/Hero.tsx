@@ -1,21 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
       
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Logo */}
         <div className="mb-8">
-          <img 
-            src="/lovable-uploads/d2aaf6c5-b5e0-48af-8a64-b8f90e6b1bd6.png" 
-            alt="Institute of Holistic Integrative Studies Logo" 
-            className="mx-auto h-20 md:h-24 w-auto"
-          />
+          <img src="/lovable-uploads/d2aaf6c5-b5e0-48af-8a64-b8f90e6b1bd6.png" alt="Institute of Holistic Integrative Studies Logo" className="mx-auto h-20 md:h-24 w-auto" />
         </div>
 
         <div className="mb-6">
@@ -29,18 +22,13 @@ export const Hero = () => {
           Health & Wellness Coach
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Whether you've explored other certifications or are just starting out, IHIS offers the complete path to a reputable, profitable coaching career—fully approved by the NBHWC and recognized by medical professionals.
-        </p>
+        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">Whether you've explored other certifications or are just starting out, IHIS offers the complete path to a reputable, profitable coaching career, fully approved by the NBHWC and recognized by medical professionals.</p>
 
         {/* VSL Video Placeholder */}
         <div className="relative mb-12 max-w-4xl mx-auto">
           <div className="aspect-video bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <Button 
-              size="lg" 
-              className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105"
-            >
+            <Button size="lg" className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105">
               <Play className="mr-2 h-6 w-6" />
               Watch This Important Message
             </Button>
@@ -51,23 +39,14 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            asChild
-          >
+          <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
             <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
               Secure Your Spot Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
           
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
-            asChild
-          >
+          <Button variant="outline" size="lg" className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300" asChild>
             <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
               Schedule Free Call
             </a>
@@ -78,6 +57,5 @@ export const Hero = () => {
           <p>✓ NBHWC Approved Program ✓ Board Certification Eligible ✓ Medical Partnership Ready</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
