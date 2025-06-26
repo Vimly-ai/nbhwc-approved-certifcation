@@ -65,6 +65,30 @@ export const SolutionSection = () => {
                   <p className="text-gray-600">Not just coaching skills - but how to build and scale a profitable coaching practice.</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Post Graduate Support</h4>
+                  <p className="text-gray-600">Ongoing mentorship and resources to help you succeed after certification completion.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Small Groups/High Touch</h4>
+                  <p className="text-gray-600">Intimate cohort sizes ensure personalized attention and meaningful connections with peers.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-teal-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Exam Prep Built In</h4>
+                  <p className="text-gray-600">Comprehensive preparation for the NBHWC board exam integrated throughout the curriculum.</p>
+                </div>
+              </div>
             </div>
           </div>
 
