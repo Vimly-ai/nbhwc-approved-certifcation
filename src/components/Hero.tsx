@@ -60,14 +60,12 @@ export const Hero = () => {
             ) : (
               /* Wistia Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
-                <iframe 
-                  src="https://fackrellandrew.wistia.com/medias/bo51j3rp46?embedType=web_component&seo=false&videoWidth=720"
+                <wistia-player 
+                  media-id="bo51j3rp46" 
+                  wistia-popover="true" 
+                  aspect="0.7128712871287128"
                   className="w-full h-full"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen" 
-                  allowFullScreen
-                  title="IHIS Health Coach Program"
-                ></iframe>
+                ></wistia-player>
               </div>
             )}
           </div>
