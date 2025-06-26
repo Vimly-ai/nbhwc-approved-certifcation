@@ -100,7 +100,7 @@ export const SolutionSection = () => {
                   <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm font-bold">1</span>
                   </div>
-                  <span className="text-gray-700">50+ Hours Asynchronous Learning</span>
+                  <span className="text-gray-700">100+ Hours Asynchronous Learning</span>
                 </div>
 
                 <div className="flex items-center gap-3 p-3 bg-teal-50 rounded-lg">
