@@ -44,7 +44,7 @@ export const FinalCTA = () => {
             <div className="space-y-4 mb-8">
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Program Duration:</span>
-                <span className="text-white font-semibold">12-13 weeks</span>
+                <span className="text-white font-semibold">13 weeks</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Live Calls Start:</span>
