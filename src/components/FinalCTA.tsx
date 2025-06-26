@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, CheckCircle } from "lucide-react";
 
@@ -100,7 +99,7 @@ export const FinalCTA = () => {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-400">
                 ✓ Payment plans available<br />
-                ✓ Early bird discount expires soon
+                ✓ NBHWC board certification pathway
               </p>
             </div>
           </div>
