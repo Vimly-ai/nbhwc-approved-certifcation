@@ -12,7 +12,7 @@ const testimonials = [{
 }, {
   name: "Jennifer L.",
   credential: "NBC-HWC, Health Coach",
-  content: "The business training was game-changing. I not only passed the board exam but also built a six-figure coaching practice within 18 months of graduation.",
+  content: "Jill is SO Knowledgeable in this field it is really incredible to have her as the leader of this program. I cannot say enough about her depth of knowledge and passion for coaching.",
   rating: 5
 }];
 export const TestimonialsSection = () => {
