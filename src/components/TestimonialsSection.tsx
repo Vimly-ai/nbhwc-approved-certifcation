@@ -1,9 +1,8 @@
-
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah M.",
+    name: "August 2023 Cohort Student",
     credential: "NBC-HWC, Former Naturopath",
     content: "I LOVED how Jill created this course, she was very creative in how she put it all together. She taught us to learn the information in a way that was geared to everyone's different learning skills, which helped us remember the information! This is what makes this program stand out from the rest.",
     rating: 5
