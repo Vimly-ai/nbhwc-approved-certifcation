@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -62,7 +60,7 @@ export const Hero = () => {
               /* YouTube Shorts Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://www.youtube.com/embed/agjI0StFRpM?autoplay=1" 
+                  src="https://www.youtube.com/embed/agjI0StFRpM?autoplay=1&rel=0&showinfo=0&controls=1&modestbranding=1&iv_load_policy=3&disablekb=1" 
                   className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowFullScreen
@@ -95,4 +93,3 @@ export const Hero = () => {
       </div>
     </section>;
 };
-
