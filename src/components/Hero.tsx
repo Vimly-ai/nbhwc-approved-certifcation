@@ -119,7 +119,7 @@ export const Hero = () => {
               Schedule Free Call
             </a>
           </Button>
-        </</div>
+        </div>
 
         <div className="mt-8 text-sm text-gray-500">
           <p>✓ NBHWC Approved Program ✓ Board Certification Eligible ✓ Medical Partnership Ready</p>
