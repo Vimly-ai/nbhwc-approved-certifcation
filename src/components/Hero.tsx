@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -58,10 +57,10 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* YouTube Embed with minimal branding */
+              /* YouTube Embed with maximum branding removal attempts */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://www.youtube-nocookie.com/embed/agjI0StFRpM?autoplay=1&controls=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1&cc_load_policy=0&playsinline=1&widget_referrer=https%3A//www.example.com"
+                  src="https://www.youtube-nocookie.com/embed/agjI0StFRpM?autoplay=1&controls=0&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1&cc_load_policy=0&playsinline=1&start=1&end=999999&loop=0&playlist=&origin=https://example.com"
                   className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowFullScreen
