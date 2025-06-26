@@ -1,4 +1,3 @@
-
 export const SocialProof = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -15,7 +14,7 @@ export const SocialProof = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden border-2 border-gray-100">
-              <img src="/lovable-uploads/a50ffe48-d60a-4350-b55b-67f7d0097f90.png" alt="NBHWC Logo" className="w-16 h-16 object-contain" />
+              <img src="https://d11n7da8rpqbjy.cloudfront.net/academyepic/725063486925nbhwc-approved-seal_web-1536x731.png" alt="NBHWC Logo" className="w-16 h-16 object-contain" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Officially Approved</h3>
             <p className="text-gray-600">Approved Health and Wellness Coach Training & Education Program by the National Board for Health and Wellness Coaching</p>
