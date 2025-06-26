@@ -58,13 +58,13 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Vimeo Embed with privacy settings */
+              /* Wistia Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://player.vimeo.com/video/1096481292?h=0&autoplay=1&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                  src="https://fackrellandrew.wistia.com/medias/bo51j3rp46?embedType=web_component&seo=false&videoWidth=720"
                   className="w-full h-full"
                   frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture" 
+                  allow="autoplay; fullscreen" 
                   allowFullScreen
                   title="IHIS Health Coach Program"
                 ></iframe>
