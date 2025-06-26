@@ -1,8 +1,15 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { useState } from "react";
 
 export const Hero = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  const handlePlayVideo = () => {
+    setIsVideoPlaying(true);
+  };
+
   return <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
       
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
@@ -27,25 +34,39 @@ export const Hero = () => {
         {/* VSL Video Thumbnail with Background Image */}
         <div className="relative mb-12 max-w-4xl mx-auto">
           <div className="aspect-video rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden">
-            {/* Background Image */}
-            <img 
-              src="/lovable-uploads/7ed7d008-e237-4141-a7e8-60f7e0233a2f.png" 
-              alt="Health Coach Program" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30"></div>
-            {/* Play Button */}
-            <Button size="lg" className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105" asChild>
-              <a href="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                <Play className="mr-2 h-6 w-6" />
-                Watch This Important Message
-              </a>
-            </Button>
-            {/* Bottom Text */}
-            <div className="absolute bottom-4 left-4 text-white/80 text-sm">
-              Learn why 90% of health coaches fail to build sustainable careers...
-            </div>
+            {!isVideoPlaying ? (
+              <>
+                {/* Background Image */}
+                <img 
+                  src="/lovable-uploads/7ed7d008-e237-4141-a7e8-60f7e0233a2f.png" 
+                  alt="Health Coach Program" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30"></div>
+                {/* Play Button */}
+                <Button 
+                  size="lg" 
+                  className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105"
+                  onClick={handlePlayVideo}
+                >
+                  <Play className="mr-2 h-6 w-6" />
+                  Watch This Important Message
+                </Button>
+                {/* Bottom Text */}
+                <div className="absolute bottom-4 left-4 text-white/80 text-sm">
+                  Learn why 90% of health coaches fail to build sustainable careers...
+                </div>
+              </>
+            ) : (
+              /* Embedded Video */
+              <iframe
+                src="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/preview"
+                className="w-full h-full rounded-2xl"
+                allow="autoplay"
+                title="Health Coach Program Video"
+              ></iframe>
+            )}
           </div>
         </div>
 
