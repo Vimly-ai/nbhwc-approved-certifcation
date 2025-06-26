@@ -60,7 +60,7 @@ export const Hero = () => {
               /* YouTube Shorts Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://www.youtube.com/embed/agjI0StFRpM?autoplay=1&rel=0&showinfo=0&controls=1&modestbranding=1&iv_load_policy=3&disablekb=1" 
+                  src="https://www.youtube.com/embed/agjI0StFRpM?autoplay=1&rel=0&showinfo=0&controls=1&modestbranding=1&iv_load_policy=3&disablekb=1&cc_load_policy=0&fs=0&color=white&autohide=1" 
                   className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowFullScreen
