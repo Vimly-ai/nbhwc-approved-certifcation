@@ -10,7 +10,8 @@ export const Hero = () => {
     setIsVideoPlaying(true);
   };
 
-  return <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
       
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
       
@@ -91,5 +92,6 @@ export const Hero = () => {
           <p>✓ NBHWC Approved Program ✓ Board Certification Eligible ✓ Medical Partnership Ready</p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
