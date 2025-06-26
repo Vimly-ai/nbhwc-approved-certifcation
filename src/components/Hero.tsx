@@ -11,11 +11,16 @@ export const Hero = () => {
   };
 
   useEffect(() => {
-    if (isVideoPlaying && window.Wistia) {
-      window.Wistia.embed("bo51j3rp46", {
-        videoFoam: true,
-        container: "wistia-video-container"
-      });
+    if (isVideoPlaying) {
+      // Create the Wistia embed script dynamically
+      const script = document.createElement('script');
+      script.src = 'https://fackrellandrew.wistia.com/embed/bo51j3rp46.js';
+      script.async = true;
+      script.onload = () => {
+        // The script will automatically embed the video
+        console.log('Wistia script loaded');
+      };
+      document.head.appendChild(script);
     }
   }, [isVideoPlaying]);
 
@@ -68,10 +73,9 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Wistia Embed */
+              /* Wistia Embed Container */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <div 
-                  id="wistia-video-container"
                   className="wistia_embed wistia_async_bo51j3rp46 w-full h-full"
                   style={{ height: "100%", position: "relative" }}
                 >
