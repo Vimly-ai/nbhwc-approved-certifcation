@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, CheckCircle } from "lucide-react";
 
@@ -34,7 +33,7 @@ export const FinalCTA = () => {
               {[
                 "Complete NBHWC-approved curriculum (100+ hours)",
                 "Live mentored skill development sessions",
-                "12 weeks of interactive group coaching",
+                "13 weeks of interactive group coaching",
                 "Business building and marketing training",
                 "Direct pathway to board certification",
                 "Lifetime access to graduate community",
