@@ -17,15 +17,26 @@ export const Hero = () => {
       script.src = 'https://fackrellandrew.wistia.com/embed/bo51j3rp46.js';
       script.async = true;
       script.onload = () => {
-        // Force autoplay after script loads
         console.log('Wistia script loaded');
-        // Give Wistia a moment to initialize, then trigger play
-        setTimeout(() => {
+        // Wait for Wistia to fully initialize, then force play
+        const checkAndPlay = () => {
           const wistiaApi = (window as any).Wistia?.api('bo51j3rp46');
           if (wistiaApi) {
+            console.log('Wistia API found, attempting to play');
             wistiaApi.play();
+            // Hide any remaining play buttons
+            setTimeout(() => {
+              const playButtons = document.querySelectorAll('.wistia_click_to_play, .wistia_bigPlayButtonContainer, .wistia_playButton');
+              playButtons.forEach(button => {
+                (button as HTMLElement).style.display = 'none';
+              });
+            }, 100);
+          } else {
+            console.log('Wistia API not ready, retrying...');
+            setTimeout(checkAndPlay, 200);
           }
-        }, 500);
+        };
+        checkAndPlay();
       };
       document.head.appendChild(script);
     }
@@ -85,7 +96,7 @@ export const Hero = () => {
                 <div 
                   className="wistia_embed wistia_async_bo51j3rp46 w-full h-full"
                   style={{ height: "100%", position: "relative" }}
-                  data-wistia-options='{"autoPlay":true,"playbar":true,"volumeControl":true,"fullscreenButton":true,"settingsControl":true,"qualityControl":true}'
+                  data-wistia-options='{"autoPlay":true,"controlsVisibleOnLoad":true,"playbar":true,"volumeControl":true,"fullscreenButton":true,"settingsControl":false,"qualityControl":false,"playButton":false,"bigPlayButton":false}'
                 >
                   &nbsp;
                 </div>
@@ -108,7 +119,7 @@ export const Hero = () => {
               Schedule Free Call
             </a>
           </Button>
-        </div>
+        </</div>
 
         <div className="mt-8 text-sm text-gray-500">
           <p>✓ NBHWC Approved Program ✓ Board Certification Eligible ✓ Medical Partnership Ready</p>
