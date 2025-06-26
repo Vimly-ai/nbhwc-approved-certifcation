@@ -58,10 +58,10 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Vimeo Embed with minimal UI */
+              /* Vimeo Embed with privacy settings */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&autoplay=1&title=0&byline=0&portrait=0&controls=1&playsinline=1&dnt=1&transparent=0"
+                  src="https://player.vimeo.com/video/1096481292?h=0&autoplay=1&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
                   className="w-full h-full"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture" 
