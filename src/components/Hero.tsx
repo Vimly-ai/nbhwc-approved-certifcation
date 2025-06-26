@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -14,7 +15,6 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-100/50 via-transparent to-transparent"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        {/* Logo */}
         <div className="mb-8">
           <img src="/lovable-uploads/d2aaf6c5-b5e0-48af-8a64-b8f90e6b1bd6.png" alt="Institute of Holistic Integrative Studies Logo" className="mx-auto h-20 md:h-24 w-auto" />
         </div>
@@ -58,29 +58,15 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Direct Google Drive Video Embed */
-              <iframe
-                src="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/preview"
-                className="w-full h-full rounded-2xl"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Health Coach Program Video"
-                onLoad={() => {
-                  // Force play by simulating a click on the iframe
-                  setTimeout(() => {
-                    const iframe = document.querySelector('iframe[title="Health Coach Program Video"]') as HTMLIFrameElement;
-                    if (iframe) {
-                      iframe.focus();
-                      // Try to trigger play via postMessage
-                      try {
-                        iframe.contentWindow?.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-                      } catch (e) {
-                        console.log('Could not auto-play video');
-                      }
-                    }
-                  }, 500);
-                }}
-              ></iframe>
+              /* Vimeo Embed */
+              <div className="w-full h-full rounded-2xl overflow-hidden">
+                <iframe 
+                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1" 
+                  className="w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  title="IHIS Cohort"
+                ></iframe>
+              </div>
             )}
           </div>
         </div>
