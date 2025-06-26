@@ -59,11 +59,12 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Embedded Video */
+              /* Embedded Video with Autoplay */
               <iframe
-                src="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/preview"
+                src={`https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/preview?autoplay=1&start=1`}
                 className="w-full h-full rounded-2xl"
-                allow="autoplay; fullscreen"
+                allow="autoplay; encrypted-media; fullscreen"
+                allowFullScreen
                 title="Health Coach Program Video"
               ></iframe>
             )}
