@@ -78,6 +78,7 @@ export const Hero = () => {
                 <div 
                   className="wistia_embed wistia_async_bo51j3rp46 w-full h-full"
                   style={{ height: "100%", position: "relative" }}
+                  data-wistia-options='{"controlsVisibleOnLoad":false,"fullscreenButton":false,"settingsControl":false,"qualityControl":false,"volumeControl":true,"playButton":false}'
                 >
                   &nbsp;
                 </div>
