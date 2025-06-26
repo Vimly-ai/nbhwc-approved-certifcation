@@ -58,13 +58,13 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Vimeo Embed with branding removed but controls enabled for pause */
+              /* Vimeo Embed with minimal UI */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&sidedock=0&dnt=1"
+                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&autoplay=1&title=0&byline=0&portrait=0&controls=1&playsinline=1&dnt=1&transparent=0"
                   className="w-full h-full"
                   frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  allow="autoplay; fullscreen; picture-in-picture" 
                   allowFullScreen
                   title="IHIS Health Coach Program"
                 ></iframe>
