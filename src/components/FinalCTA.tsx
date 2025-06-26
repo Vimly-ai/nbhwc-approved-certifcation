@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, CheckCircle } from "lucide-react";
-
 export const FinalCTA = () => {
-  return (
-    <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+  return <section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
       
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-900/20 via-transparent to-transparent"></div>
       
@@ -30,20 +28,10 @@ export const FinalCTA = () => {
             <h3 className="text-3xl font-bold mb-8">What You Get When You Enroll Today:</h3>
             
             <div className="space-y-4">
-              {[
-                "Complete NBHWC-approved curriculum (100+ hours)",
-                "Live mentored skill development sessions",
-                "13 weeks of interactive group coaching",
-                "Business building and marketing training",
-                "Direct pathway to board certification",
-                "Access to graduate community",
-                "Payment plans as low as $250/month"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
+              {["Complete NBHWC-approved curriculum (100+ hours)", "Live mentored skill development sessions", "13 weeks of interactive group coaching", "Business building and marketing training", "Direct pathway to board certification", "Access to graduate community", "Payment plans as low as $250/month"].map((item, index) => <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="h-6 w-6 text-teal-400 flex-shrink-0" />
                   <span className="text-gray-200">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -56,7 +44,7 @@ export const FinalCTA = () => {
             <div className="space-y-4 mb-8">
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Program Duration:</span>
-                <span className="text-white font-semibold">12-14 weeks</span>
+                <span className="text-white font-semibold">12-13 weeks</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Live Calls Start:</span>
@@ -64,7 +52,7 @@ export const FinalCTA = () => {
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Schedule Options:</span>
-                <span className="text-white font-semibold">2 time slots</span>
+                <span className="text-white font-semibold">2 Live Group Call Options</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-gray-300">Payment Plans:</span>
@@ -73,23 +61,14 @@ export const FinalCTA = () => {
             </div>
 
             <div className="space-y-4">
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                asChild
-              >
+              <Button size="lg" className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                 <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
                   Secure Your Spot Now
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
-                asChild
-              >
+              <Button variant="outline" size="lg" className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300" asChild>
                 <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
                   Schedule Free Consultation Call
                 </a>
@@ -117,6 +96,5 @@ export const FinalCTA = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
