@@ -17,8 +17,15 @@ export const Hero = () => {
       script.src = 'https://fackrellandrew.wistia.com/embed/bo51j3rp46.js';
       script.async = true;
       script.onload = () => {
-        // The script will automatically embed the video
+        // Force autoplay after script loads
         console.log('Wistia script loaded');
+        // Give Wistia a moment to initialize, then trigger play
+        setTimeout(() => {
+          const wistiaApi = (window as any).Wistia?.api('bo51j3rp46');
+          if (wistiaApi) {
+            wistiaApi.play();
+          }
+        }, 500);
       };
       document.head.appendChild(script);
     }
@@ -78,7 +85,7 @@ export const Hero = () => {
                 <div 
                   className="wistia_embed wistia_async_bo51j3rp46 w-full h-full"
                   style={{ height: "100%", position: "relative" }}
-                  data-wistia-options='{"controlsVisibleOnLoad":false,"fullscreenButton":false,"settingsControl":false,"qualityControl":false,"volumeControl":true,"playButton":false,"autoPlay":true}'
+                  data-wistia-options='{"autoPlay":true,"playbar":true,"volumeControl":true,"fullscreenButton":true,"settingsControl":true,"qualityControl":true}'
                 >
                   &nbsp;
                 </div>
