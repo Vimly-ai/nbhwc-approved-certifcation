@@ -1,4 +1,3 @@
-
 import { CheckCircle, Award, Users, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +8,7 @@ export const SolutionSection = () => {
         {/* NBHWC Approved Image */}
         <div className="text-center mb-12">
           <img 
-            src="/lovable-uploads/dc1295a4-dcdb-477b-ae12-9a62b7388186.png" 
+            src="https://d11n7da8rpqbjy.cloudfront.net/academyepic/725063486925nbhwc-approved-seal_web-1536x731.png" 
             alt="NBHWC Approved Training Program" 
             className="mx-auto h-32 md:h-40 w-auto"
           />
