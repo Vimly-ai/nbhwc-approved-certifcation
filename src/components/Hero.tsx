@@ -63,7 +63,7 @@ export const Hero = () => {
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <wistia-player 
                   media-id="bo51j3rp46" 
-                  wistia-popover="true" 
+                  seo="false" 
                   aspect="0.7128712871287128"
                   className="w-full h-full"
                 ></wistia-player>
