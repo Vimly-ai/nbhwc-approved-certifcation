@@ -36,7 +36,7 @@ export const FinalCTA = () => {
                 "13 weeks of interactive group coaching",
                 "Business building and marketing training",
                 "Direct pathway to board certification",
-                "Lifetime access to graduate community",
+                "Access to graduate community",
                 "Payment plans as low as $250/month",
                 "Early bird discount (limited time)"
               ].map((item, index) => (
