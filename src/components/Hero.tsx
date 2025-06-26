@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -59,10 +58,10 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Vimeo Embed with all branding and controls removed */
+              /* Vimeo Embed with branding removed but controls enabled for pause */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&controls=0&sidedock=0"
+                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&sidedock=0"
                   className="w-full h-full"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
@@ -96,4 +95,3 @@ export const Hero = () => {
       </div>
     </section>;
 };
-
