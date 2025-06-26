@@ -10,7 +10,7 @@ const testimonials = [{
   content: "I've worked with many health coaches, but IHIS graduates are different. They understand the medical model and can work seamlessly within our healthcare system.",
   rating: 5
 }, {
-  name: "Jennifer L.",
+  name: "August 2023 Cohort Student",
   credential: "NBC-HWC, Health Coach",
   content: "Jill is SO Knowledgeable in this field it is really incredible to have her as the leader of this program. I cannot say enough about her depth of knowledge and passion for coaching.",
   rating: 5
