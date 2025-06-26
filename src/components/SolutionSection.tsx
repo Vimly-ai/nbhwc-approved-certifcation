@@ -1,17 +1,11 @@
 import { CheckCircle, Award, Users, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const SolutionSection = () => {
-  return (
-    <section className="py-20 px-4 bg-gradient-to-br from-teal-50 to-emerald-50">
+  return <section className="py-20 px-4 bg-gradient-to-br from-teal-50 to-emerald-50">
       <div className="max-w-6xl mx-auto">
         {/* NBHWC Approved Image */}
         <div className="text-center mb-12">
-          <img 
-            src="https://d11n7da8rpqbjy.cloudfront.net/academyepic/725063486925nbhwc-approved-seal_web-1536x731.png" 
-            alt="NBHWC Approved Training Program" 
-            className="mx-auto h-32 md:h-40 w-auto"
-          />
+          <img src="https://d11n7da8rpqbjy.cloudfront.net/academyepic/725063486925nbhwc-approved-seal_web-1536x731.png" alt="NBHWC Approved Training Program" className="mx-auto h-32 md:h-40 w-auto" />
         </div>
 
         <div className="text-center mb-16">
@@ -98,7 +92,7 @@ export const SolutionSection = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-10 w-10 text-white" />
                 </div>
-                <h4 className="text-2xl font-bold text-gray-900">12-Week Intensive Program</h4>
+                <h4 className="text-2xl font-bold text-gray-900">13-Week Intensive Program</h4>
               </div>
 
               <div className="space-y-4">
@@ -134,11 +128,7 @@ export const SolutionSection = () => {
         </div>
 
         <div className="text-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-12 py-4 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            asChild
-          >
+          <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-12 py-4 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
             <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
               Get Started Today - August Cohort
             </a>
@@ -148,6 +138,5 @@ export const SolutionSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
