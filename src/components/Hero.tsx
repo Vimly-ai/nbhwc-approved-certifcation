@@ -24,17 +24,17 @@ export const Hero = () => {
 
         <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">Whether you've explored other certifications or are just starting out, IHIS offers the complete path to a reputable, profitable coaching career, fully approved by the NBHWC and recognized by medical professionals.</p>
 
-        {/* Embedded Video */}
+        {/* VSL Video Placeholder */}
         <div className="relative mb-12 max-w-4xl mx-auto">
-          <div className="aspect-video rounded-2xl shadow-2xl overflow-hidden">
-            <iframe 
-              src="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/preview" 
-              width="100%" 
-              height="100%" 
-              allow="autoplay"
-              className="w-full h-full"
-              title="IHIS Health Coach Training Program Video"
-            ></iframe>
+          <div className="aspect-video bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <Button size="lg" className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105">
+              <Play className="mr-2 h-6 w-6" />
+              Watch This Important Message
+            </Button>
+            <div className="absolute bottom-4 left-4 text-white/80 text-sm">
+              Learn why 90% of health coaches fail to build sustainable careers...
+            </div>
           </div>
         </div>
 
