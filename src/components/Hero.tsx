@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Hero = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -9,6 +9,15 @@ export const Hero = () => {
   const handlePlayVideo = () => {
     setIsVideoPlaying(true);
   };
+
+  useEffect(() => {
+    if (isVideoPlaying && window.Wistia) {
+      window.Wistia.embed("bo51j3rp46", {
+        videoFoam: true,
+        container: "wistia-video-container"
+      });
+    }
+  }, [isVideoPlaying]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
@@ -61,12 +70,13 @@ export const Hero = () => {
             ) : (
               /* Wistia Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
-                <wistia-player 
-                  media-id="bo51j3rp46" 
-                  seo="false" 
-                  aspect="0.7128712871287128"
-                  className="w-full h-full"
-                ></wistia-player>
+                <div 
+                  id="wistia-video-container"
+                  className="wistia_embed wistia_async_bo51j3rp46 w-full h-full"
+                  style={{ height: "100%", position: "relative" }}
+                >
+                  &nbsp;
+                </div>
               </div>
             )}
           </div>
