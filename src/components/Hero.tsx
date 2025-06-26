@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -58,12 +59,13 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* YouTube Embed with balanced parameters for functionality and minimal branding */
+              /* Vimeo Embed with branding removed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://www.youtube-nocookie.com/embed/agjI0StFRpM?autoplay=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3"
+                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0"
                   className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                   allowFullScreen
                   title="IHIS Health Coach Program"
                 ></iframe>
@@ -94,3 +96,4 @@ export const Hero = () => {
       </div>
     </section>;
 };
+
