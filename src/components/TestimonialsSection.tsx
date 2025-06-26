@@ -1,9 +1,10 @@
+
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
     name: "August 2023 Cohort Student",
-    credential: "NBC-HWC, Former Naturopath",
+    credential: "",
     content: "I LOVED how Jill created this course, she was very creative in how she put it all together. She taught us to learn the information in a way that was geared to everyone's different learning skills, which helped us remember the information! This is what makes this program stand out from the rest.",
     rating: 5
   },
@@ -51,7 +52,9 @@ export const TestimonialsSection = () => {
 
               <div className="border-t pt-4">
                 <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                <p className="text-sm text-gray-600">{testimonial.credential}</p>
+                {testimonial.credential && (
+                  <p className="text-sm text-gray-600">{testimonial.credential}</p>
+                )}
               </div>
             </div>
           ))}
