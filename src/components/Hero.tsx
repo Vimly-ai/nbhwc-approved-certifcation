@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState } from "react";
@@ -58,13 +59,14 @@ export const Hero = () => {
                 </div>
               </>
             ) : (
-              /* Vimeo Embed */
+              /* YouTube Shorts Embed */
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <iframe 
-                  src="https://player.vimeo.com/video/1096481292?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1" 
+                  src="https://www.youtube.com/embed/agjI0StFRpM?autoplay=1&mute=1" 
                   className="w-full h-full"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  title="IHIS Cohort"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen
+                  title="IHIS Health Coach Program"
                 ></iframe>
               </div>
             )}
@@ -93,3 +95,4 @@ export const Hero = () => {
       </div>
     </section>;
 };
+
