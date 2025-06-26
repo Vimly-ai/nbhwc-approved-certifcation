@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, CheckCircle } from "lucide-react";
 
@@ -37,8 +38,7 @@ export const FinalCTA = () => {
                 "Business building and marketing training",
                 "Direct pathway to board certification",
                 "Access to graduate community",
-                "Payment plans as low as $250/month",
-                "Early bird discount (limited time)"
+                "Payment plans as low as $250/month"
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="h-6 w-6 text-teal-400 flex-shrink-0" />
