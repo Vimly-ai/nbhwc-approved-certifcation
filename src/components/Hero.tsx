@@ -36,9 +36,11 @@ export const Hero = () => {
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30"></div>
             {/* Play Button */}
-            <Button size="lg" className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105">
-              <Play className="mr-2 h-6 w-6" />
-              Watch This Important Message
+            <Button size="lg" className="relative z-10 bg-white/20 hover:bg-white/30 text-white border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105" asChild>
+              <a href="https://drive.google.com/file/d/13s1ugaW_CPGzUB5tsl4bdCm45daeQhqX/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <Play className="mr-2 h-6 w-6" />
+                Watch This Important Message
+              </a>
             </Button>
             {/* Bottom Text */}
             <div className="absolute bottom-4 left-4 text-white/80 text-sm">
