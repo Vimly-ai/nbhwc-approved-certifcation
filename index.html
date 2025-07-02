@@ -45,6 +45,25 @@
     }
     </script>
 
+    <!-- Event snippet for NBHWC Checkout conversion page -->
+    <script>
+    function gtag_report_stripe_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16579341504/E0ymCM7mt-gaEMDZ0uE9',
+          'value': 1.0,
+          'currency': 'USD',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <style>
       .wistia_embed { position: relative; }
