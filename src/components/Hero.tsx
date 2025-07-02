@@ -114,10 +114,13 @@ export const Hero = () => {
             </a>
           </Button>
           
-          <Button variant="outline" size="lg" className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300" asChild>
-            <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
-              Schedule Free Call
-            </a>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+            onClick={() => (window as any).gtag_report_conversion('https://calendly.com/jillbucaro/15-minute-chat?month=2025-06')}
+          >
+            Schedule Free Call
           </Button>
         </div>
 

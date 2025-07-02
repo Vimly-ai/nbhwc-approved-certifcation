@@ -68,10 +68,13 @@ export const FinalCTA = () => {
                 </a>
               </Button>
               
-              <Button variant="outline" size="lg" className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300" asChild>
-                <a href="https://calendly.com/jillbucaro/15-minute-chat?month=2025-06" target="_blank" rel="noopener noreferrer">
-                  Schedule Free Consultation Call
-                </a>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                onClick={() => (window as any).gtag_report_conversion('https://calendly.com/jillbucaro/15-minute-chat?month=2025-06')}
+              >
+                Schedule Free Consultation Call
               </Button>
             </div>
 
