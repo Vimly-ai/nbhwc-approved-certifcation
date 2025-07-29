@@ -93,7 +93,7 @@ export const FinalCTA = () => {
         <div className="text-center">
           <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-300 px-4 py-2 rounded-full mb-4">
             <Users className="h-5 w-5" />
-            <span className="font-semibold">Only 25 spots available per cohort</span>
+            <span className="font-semibold">Only 16 spots available per cohort</span>
           </div>
           
           <p className="text-gray-300 max-w-2xl mx-auto">
