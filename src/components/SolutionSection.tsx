@@ -129,9 +129,7 @@ export const SolutionSection = () => {
 
         <div className="text-center">
           <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-12 py-4 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
-            <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">
-              Get Started Today - August Cohort
-            </a>
+            <a href="https://academyepic.kartra.com/pay/guDY2shAvpCp" target="_blank" rel="noopener noreferrer">Get Started Today - January Cohort</a>
           </Button>
           <p className="text-sm text-gray-500 mt-4">
             Limited spots available • Payment plans as low as $250/month

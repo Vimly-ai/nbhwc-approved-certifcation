@@ -10,7 +10,7 @@ export const FinalCTA = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-300 px-4 py-2 rounded-full mb-6">
             <Clock className="h-5 w-5" />
-            <span className="font-semibold">Limited Time - August 2025 Cohort</span>
+            <span className="font-semibold">Limited Time - January 2026 Cohort</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -37,7 +37,7 @@ export const FinalCTA = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-center mb-6">
-              <h4 className="text-2xl font-bold text-white mb-2">August 2025 Cohort Details</h4>
+              <h4 className="text-2xl font-bold text-white mb-2">January 2025 Cohort Details</h4>
               <p className="text-gray-300">Limited spots available</p>
             </div>
 
@@ -48,7 +48,7 @@ export const FinalCTA = () => {
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Live Calls Start:</span>
-                <span className="text-white font-semibold">Week of Aug 11</span>
+                <span className="text-white font-semibold">January </span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Schedule Options:</span>
@@ -61,21 +61,12 @@ export const FinalCTA = () => {
             </div>
 
             <div className="space-y-4">
-            <Button 
-              size="lg" 
-              className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              onClick={() => (window as any).gtag_report_stripe_conversion('https://academyepic.kartra.com/pay/guDY2shAvpCp')}
-            >
+            <Button size="lg" className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" onClick={() => (window as any).gtag_report_stripe_conversion('https://academyepic.kartra.com/pay/guDY2shAvpCp')}>
               Secure Your Spot Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
-                onClick={() => (window as any).gtag_report_conversion('https://calendly.com/jillbucaro/15-minute-chat?month=2025-06')}
-              >
+              <Button variant="outline" size="lg" className="w-full border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 py-4 text-lg font-semibold rounded-xl transition-all duration-300" onClick={() => (window as any).gtag_report_conversion('https://calendly.com/jillbucaro/15-minute-chat?month=2025-06')}>
                 Schedule Free Consultation Call
               </Button>
             </div>
