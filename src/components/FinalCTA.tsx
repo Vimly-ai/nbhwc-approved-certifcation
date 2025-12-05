@@ -88,7 +88,7 @@ export const FinalCTA = () => {
           </div>
           
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Don't wait until the last minute. Cohorts fill up quickly, and the next opportunity won't be until 2026. Your future clients are waiting for a coach with real credentials - will that be you?
+            Don't wait until the last minute. Cohorts fill up quickly. Your future clients are waiting for a coach with real credentials - will that be you?
           </p>
         </div>
       </div>
