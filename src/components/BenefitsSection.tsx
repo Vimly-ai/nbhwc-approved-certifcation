@@ -55,7 +55,7 @@ export const BenefitsSection = () => {
             Join the select group of health coaches who have the credentials, skills, and business knowledge to create sustainable, profitable practices that make a real difference.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <div className="text-center sm:text-left">
               <p className="text-2xl font-bold text-teal-600">January 2026 Cohort</p>
               <p className="text-sm text-gray-600">Live calls start Soon</p>
@@ -65,6 +65,10 @@ export const BenefitsSection = () => {
               <p className="text-sm text-gray-600">As low as $250/month</p>
             </div>
           </div>
+          
+          <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" onClick={() => (window as any).gtag_report_stripe_conversion('https://buy.stripe.com/eVq14o5p305G0K07fr4ZG0n')}>
+            Enroll Now
+          </Button>
         </div>
 
         <div className="text-center mt-12">
