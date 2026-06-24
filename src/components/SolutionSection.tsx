@@ -92,7 +92,7 @@ export const SolutionSection = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-10 w-10 text-white" />
                 </div>
-                <h4 className="text-2xl font-bold text-gray-900">13-Week Intensive Program</h4>
+                <h4 className="text-2xl font-bold text-gray-900">14-Week Intensive Program</h4>
               </div>
 
               <div className="space-y-4">
