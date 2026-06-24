@@ -132,7 +132,7 @@ export const SolutionSection = () => {
             <a target="_blank" rel="noopener noreferrer" href="https://buy.stripe.com/bJe4gA6t7cSs64k9nz4ZG0m">Get Started Today - August Cohort</a>
           </Button>
           <p className="text-sm text-gray-500 mt-4">
-            Limited spots available • Payment plans as low as $250/month
+            Limited spots available • Payment available
           </p>
         </div>
       </div>
