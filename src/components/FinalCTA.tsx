@@ -48,7 +48,7 @@ export const FinalCTA = () => {
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Live Calls Start:</span>
-                <span className="text-white font-semibold">January </span>
+                <span className="text-white font-semibold">August </span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <span className="text-gray-300">Schedule Options:</span>
