@@ -10,7 +10,7 @@ export const FinalCTA = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-300 px-4 py-2 rounded-full mb-6">
             <Clock className="h-5 w-5" />
-            <span className="font-semibold">Limited Time - January 2026 Cohort</span>
+            <span className="font-semibold">Limited Time - August 2026 Cohort</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -37,7 +37,7 @@ export const FinalCTA = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-center mb-6">
-              <h4 className="text-2xl font-bold text-white mb-2">January 2025 Cohort Details</h4>
+              <h4 className="text-2xl font-bold text-white mb-2">August 2026 Cohort Details</h4>
               <p className="text-gray-300">Limited spots available</p>
             </div>
 
