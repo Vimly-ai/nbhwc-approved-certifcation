@@ -28,7 +28,7 @@ export const FinalCTA = () => {
             <h3 className="text-3xl font-bold mb-8">What You Get When You Enroll Today:</h3>
             
             <div className="space-y-4">
-              {["Complete NBHWC-approved curriculum (100+ hours)", "Live mentored skill development sessions", "14 weeks of interactive group coaching", "Business building and marketing training", "Direct pathway to board certification", "Access to graduate community", "Payment plans as low as $250/month"].map((item, index) => <div key={index} className="flex items-center gap-3">
+              {["Complete NBHWC-approved curriculum (100+ hours)", "Live mentored skill development sessions", "14 weeks of interactive group coaching", "Business building and marketing training", "Direct pathway to board certification", "Access to graduate community", "Payment plans Available"].map((item, index) => <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="h-6 w-6 text-teal-400 flex-shrink-0" />
                   <span className="text-gray-200">{item}</span>
                 </div>)}
