@@ -55,15 +55,9 @@ export const BenefitsSection = () => {
             Join the select group of health coaches who have the credentials, skills, and business knowledge to create sustainable, profitable practices that make a real difference.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <div className="text-center sm:text-left">
-              <p className="text-2xl font-bold text-teal-600">August 2026 Cohort</p>
-              <p className="text-sm text-gray-600">Live calls start Soon</p>
-            </div>
-            <div className="text-center sm:text-left">
-              <p className="text-2xl font-bold text-orange-600">Payment Plans Available</p>
-              <p className="text-sm text-gray-600">As low as $250/month</p>
-            </div>
+          <div className="text-center mb-8">
+            <p className="text-2xl font-bold text-teal-600">August 2026 Cohort</p>
+            <p className="text-sm text-gray-600">Live calls start Soon</p>
           </div>
           
           <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" onClick={() => (window as any).gtag_report_stripe_conversion('https://buy.stripe.com/bJe4gA6t7cSs64k9nz4ZG0m')}>
