@@ -56,7 +56,7 @@ export const FinalCTA = () => {
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-gray-300">Payment Plans:</span>
-                <span className="text-white font-semibold">From $250/month</span>
+                <span className="text-white font-semibold">available</span>
               </div>
             </div>
 
