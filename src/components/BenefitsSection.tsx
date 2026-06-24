@@ -57,7 +57,7 @@ export const BenefitsSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <div className="text-center sm:text-left">
-              <p className="text-2xl font-bold text-teal-600">January 2026 Cohort</p>
+              <p className="text-2xl font-bold text-teal-600">August 2026 Cohort</p>
               <p className="text-sm text-gray-600">Live calls start Soon</p>
             </div>
             <div className="text-center sm:text-left">
